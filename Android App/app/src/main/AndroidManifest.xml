@@ -44,7 +44,7 @@
 
         <meta-data
             android:name="com.google.android.geo.#A#P#I#_#K#E#Y"
-            android:value="AIzaSyD5NMAbcLmJsqZjrpoXScKYpZMmkt89uTo"/>
+            
 
         <activity android:name=".SafetyCheckActivity"
             android:exported="true"/>
