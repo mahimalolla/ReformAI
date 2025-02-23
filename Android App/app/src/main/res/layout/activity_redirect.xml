@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/backgroundColor"
+    android:padding="24dp"
+    tools:context=".RedirectActivity">
+
+    <!-- ReformAI Logo -->
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/reformai_logo_round"
+        android:contentDescription="ReformAI Logo"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to ReformAI"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btnViewRecords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Records"
+        android:textSize="18sp"
+        android:textColor="@color/colorWhite"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnAddRecords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Records"
+        android:textSize="18sp"
+        android:textColor="@color/colorWhite"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnCheckSafety"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check Safety"
+        android:textSize="18sp"
+        android:textColor="@color/colorWhite"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

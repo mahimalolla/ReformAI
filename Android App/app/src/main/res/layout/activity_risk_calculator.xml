@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="@color/backgroundColor">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Risk Score Calculator"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Age Dropdown -->
+    <Spinner
+        android:id="@+id/spinnerAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Education Level Dropdown -->
+    <Spinner
+        android:id="@+id/spinnerEducation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Employment Percentage Dropdown -->
+    <Spinner
+        android:id="@+id/spinnerEmployment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Prior Arrests Dropdown -->
+    <Spinner
+        android:id="@+id/spinnerPriorArrests"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Firearm or Drug History Dropdown -->
+    <Spinner
+        android:id="@+id/spinnerFirearmDrug"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Reoffense History Dropdown -->
+    <Spinner
+        android:id="@+id/spinnerReoffenseHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Combined Offense Dropdown -->
+    <Spinner
+        android:id="@+id/spinnerOffense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Calculate Button -->
+    <Button
+        android:id="@+id/btnCalculateRisk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate Risk"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Risk Score Display -->
+    <TextView
+        android:id="@+id/tvRiskScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Risk Score: --"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Risk Indicator Dot -->
+    <View
+        android:id="@+id/riskIndicatorDot"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/risk_dot"/>
+</LinearLayout>

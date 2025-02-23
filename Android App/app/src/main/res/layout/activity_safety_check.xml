@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="@color/backgroundColor">
+
+    <!-- Street Selection Spinner -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Street:"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:padding="5dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerStreet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="8dp"
+        android:popupBackground="@android:color/black"/>
+
+    <!-- District Selection Spinner -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select District:"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:padding="5dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerDistrict"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="8dp"
+        android:popupBackground="@android:color/black"/>
+
+    <Button
+        android:id="@+id/btnCheckSafety"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check Safety"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/tvSafetyResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Safety Level Will Appear Here"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Google Map View -->
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

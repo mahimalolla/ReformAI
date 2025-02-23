@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "911001347371",
+    "project_id": "civichack-70ffb",
+    "storage_bucket": "civichack-70ffb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911001347371:android:0b6a532640aae29134116e",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM2SkeqQO3MN1QyGtwGSvVa1Z15EDtwW4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication">  <!-- ✅ Ensure correct package name -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+
+        <!-- ✅ Set WelcomeActivity as the Launcher -->
+        <activity android:name=".WelcomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- ✅ Login Screen -->
+        <activity android:name=".LoginActivity"
+            android:exported="false" />
+
+        <!-- ✅ Register Screen -->
+        <activity android:name=".RegisterActivity"
+            android:exported="false" />
+
+        <activity android:name=".RedirectActivity"
+            android:exported="true"/>
+
+        <activity android:name=".PersonGridActivity"
+            android:exported="true"/>
+
+        <activity android:name=".PersonDetailActivity"
+            android:exported="true"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD5NMAbcLmJsqZjrpoXScKYpZMmkt89uTo"/>
+
+        <activity android:name=".SafetyCheckActivity"
+            android:exported="true"/>
+
+        <activity android:name=".RiskCalculatorActivity"
+            android:exported="true"/>
+
+
+
+
+
+
+    </application>
+
+</manifest>
